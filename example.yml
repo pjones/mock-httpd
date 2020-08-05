@@ -1,0 +1,21 @@
+# All file system access is restricted to this directory:
+directory: ./tmp
+
+# Listen on one or more ports:
+listen:
+  - port: 3210
+
+# Routes match incoming requests.  The first route that matches all of
+# its "match_*" properties wins.
+routes:
+  - match_path: /hello
+    match_method: GET
+
+    # Actions generate/modify the response:
+    actions:
+      - serve_text: "Hello World!\n"
+      - content_type: text/plain
+      - response_code: 200
+      - set_headers:
+          X-Hello: "World"
+          X-Cool-Code: "200"
