@@ -8,6 +8,9 @@ Given a configuration file describing routes and actions, `mock-httpd`
 will bind to the specified ports and respond to incoming HTTP
 requests.
 
+The primary goal of this project is to provide a simple way to test
+shell scripts that use [curl](https://curl.haxx.se/).
+
 ## Configuration
 
 A YAML configuration file is used to control `mock-httpd`.  The file

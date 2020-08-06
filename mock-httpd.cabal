@@ -2,18 +2,25 @@ cabal-version:      2.4
 name:               mock-httpd
 version:            0.0.0.0
 synopsis:           A HTTP server for testing HTTP clients
+homepage:           https://github.com/pjones/mock-httpd
+bug-reports:        https://github.com/pjones/mock-httpd/issues
 license:            BSD-2-Clause
 license-file:       LICENSE
 author:             Peter Jones <pjones@devalot.com>
 maintainer:         Peter Jones <pjones@devalot.com>
 copyright:          Copyright (c) 2020 Peter Jones
 category:           Network
+description:
+  Given a configuration file describing routes and actions, @mock-httpd@
+  will bind to the specified ports and respond to incoming HTTP
+  requests.
+  .
+  The primary goal of this project is to provide a simple way to test
+  shell scripts that use <https://curl.haxx.se/ curl>.
+
 extra-source-files:
   CHANGES.md
   example.yml
-
--- description:
--- bug-reports:
 
 common options
   default-language:   Haskell2010
