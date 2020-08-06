@@ -8,7 +8,9 @@ author:             Peter Jones <pjones@devalot.com>
 maintainer:         Peter Jones <pjones@devalot.com>
 copyright:          Copyright (c) 2020 Peter Jones
 category:           Network
-extra-source-files: CHANGES.md
+extra-source-files:
+  CHANGES.md
+  example.yml
 
 -- description:
 -- bug-reports:

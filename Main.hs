@@ -138,7 +138,7 @@ respond cfg req = \case
   ContentType value ->
     Modify $
       Wai.mapResponseHeaders $ \headers ->
-        ("ContentType", encodeUtf8 value) : headers
+        ("Content-Type", encodeUtf8 value) : headers
   SetHeaders hmap ->
     Modify $
       Wai.mapResponseHeaders
